@@ -1,6 +1,6 @@
 package com.jsprm.springboot.app.productos.services;
 
-import com.jsprm.springboot.app.productos.models.entities.Producto;
+import com.jsprm.springboot.app.productos.entities.Producto;
 import com.jsprm.springboot.app.productos.repositories.ProductoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

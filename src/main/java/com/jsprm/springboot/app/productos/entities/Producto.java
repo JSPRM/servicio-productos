@@ -1,4 +1,4 @@
-package com.jsprm.springboot.app.productos.models.entities;
+package com.jsprm.springboot.app.productos.entities;
 
 import javax.persistence.*;
 import java.io.Serial;
