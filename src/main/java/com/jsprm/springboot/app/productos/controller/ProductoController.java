@@ -27,7 +27,7 @@ public class ProductoController {
         return new ResponseEntity<>(productos, HttpStatus.OK);
     }
 
-    @GetMapping("/listar/{id}")
+    @GetMapping("/ver/{id}")
     public Producto detalle(@PathVariable Long id){
         return productoService.buscarPorId(id);
     }
