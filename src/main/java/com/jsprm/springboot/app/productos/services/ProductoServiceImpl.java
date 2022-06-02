@@ -11,19 +11,23 @@ import java.util.List;
 @Service
 public class ProductoServiceImpl implements ProductoService{
 
+    private final ProductoRepository productoRepository;
+
     @Autowired
-    private ProductoRepository productoRepository;
+    public ProductoServiceImpl(ProductoRepository productoRepository) {
+        this.productoRepository = productoRepository;
+    }
 
 
     @Override
     @Transactional(readOnly = true)
-    public List<Producto> findAll() {
+    public List<Producto> buscarTodos() {
         return productoRepository.findAll();
     }
 
     @Override
     @Transactional(readOnly = true)
-    public Producto findById(Long id) {
+    public Producto buscarPorId(Long id) {
         return productoRepository.findById(id).orElse(null);
     }
 }

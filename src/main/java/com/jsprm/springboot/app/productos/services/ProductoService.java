@@ -5,6 +5,6 @@ import com.jsprm.springboot.app.productos.entities.Producto;
 import java.util.List;
 
 public interface ProductoService {
-    List<Producto> findAll();
-    Producto findById(Long id);
+    List<Producto> buscarTodos();
+    Producto buscarPorId(Long id);
 }
